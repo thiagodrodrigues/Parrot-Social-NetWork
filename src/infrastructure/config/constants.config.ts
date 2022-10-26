@@ -1,4 +1,4 @@
-/* export default {
+export default {
     CLIENTS: {
         MESSAGES: {
             ERROR: {
@@ -9,4 +9,4 @@
             }
         }
     }
-} */
+}

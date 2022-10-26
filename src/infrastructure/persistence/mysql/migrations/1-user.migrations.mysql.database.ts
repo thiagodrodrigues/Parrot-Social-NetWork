@@ -2,7 +2,7 @@ import * as Sequelize from 'sequelize';
 
 export default {
     up: (queryInterface: Sequelize.QueryInterface) => {
-        return queryInterface.createTable('user', {
+        return queryInterface.createTable('users', {
             idUser: {
                 type: Sequelize.DataTypes.INTEGER,
                 primaryKey: true,
@@ -26,12 +26,12 @@ export default {
                 type: Sequelize.DataTypes.STRING,
                 allowNull: false
             },
-            created_At: Sequelize.DataTypes.DATE,
-            update_At: Sequelize.DataTypes.DATE,
+            createdAt: Sequelize.DataTypes.DATE,
+            updatedAt: Sequelize.DataTypes.DATE,
             photo: Sequelize.DataTypes.STRING
         });
     },
     down: (queryInterface: Sequelize.QueryInterface) => {
-        return queryInterface.dropTable('user');
+        return queryInterface.dropTable('users');
     }
 }

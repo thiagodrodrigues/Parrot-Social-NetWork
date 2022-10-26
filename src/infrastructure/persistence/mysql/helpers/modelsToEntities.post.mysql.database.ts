@@ -9,8 +9,8 @@ export default function (post: any): PostEntity | undefined {
         idPost: post.idPost,
         content: post.content,
         idUser: post.idUser,
-        created_At: post.created_At,
-        updated_At: post.updated_At
+        createdAt: post.createdAt,
+        updatedAt: post.updatedAt
     };
 
     return (posts as PostEntity);

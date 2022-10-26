@@ -1,17 +1,17 @@
 import { UserEntity } from "../../../../domain/entities/user/socialnetwork.user.entity";
 
-export default function (users: UserEntity) {
-    const user = {
-        idUser: users.idUser,
-        name: users.name,
-        email: users.email,
-        apartment: users.apartment,
-        password: users.password,
-        created_At: users.created_At,
-        updated_At: users.updated_At,
-        photo: users.photo,
+export default function (user: UserEntity) {
+    const users = {
+        idUser: user.idUser,
+        name: user.name,
+        email: user.email,
+        apartment: user.apartment,
+        password: user.password,
+        createdAt: user.createdAt,
+        updatedAt: user.updatedAt,
+        photo: user.photo,
     };
     return {
-        user: user,
+        users: users,
     };
 }

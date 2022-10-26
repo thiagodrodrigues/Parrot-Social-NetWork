@@ -2,16 +2,16 @@ import * as Sequelize from 'sequelize';
 
 export default {
     up: (queryInterface: Sequelize.QueryInterface) => {
-        return queryInterface.bulkInsert('pessoas_fisicas', [
+        return queryInterface.bulkInsert('post', [
             {
-                "idpessoa": 1,
-                "nome": "Erik Borges",
-                "cpf": "12345678900"
+                "content": "sadafafa",
+                "idPost": 1,
+                "idUser": 1
             },
             {
-                "idpessoa": 3,
-                "nome": "Jhon Conor",
-                "cpf": "11122233344"
+                "content": "sadafafa",
+                "idPost": 2,
+                "idUser": 3 
             }
         ])
     },

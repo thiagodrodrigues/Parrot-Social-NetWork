@@ -19,13 +19,13 @@ export default {
                 allowNull: false,
                 references: {
                     model: {
-                        tableName: 'user'
+                        tableName: 'users'
                     },
                     key: 'idUser'
                 }
             },
-            created_At: Sequelize.DataTypes.DATE,
-            update_At: Sequelize.DataTypes.DATE
+            createdAt: Sequelize.DataTypes.DATE,
+            updatedAt: Sequelize.DataTypes.DATE
         });
     },
     down: (queryInterface: Sequelize.QueryInterface) => {

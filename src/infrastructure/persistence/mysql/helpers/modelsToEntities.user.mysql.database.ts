@@ -12,8 +12,8 @@ export default function (user: any): UserEntity | undefined {
         apartment: user.apartment,
         password: user.password,
         confirmPassword: user.confirmPassword,
-        created_At: user.created_At,
-        updated_At: user.updated_At,
+        createdAt: user.createdAt,
+        updatedAt: user.updatedAt,
         photo: user.photo
         
     };

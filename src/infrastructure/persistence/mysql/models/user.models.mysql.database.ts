@@ -1,7 +1,7 @@
 import { MysqlDatabase } from "../mysql.database";
 import * as Sequelize from 'sequelize';
 
-export default MysqlDatabase.getInstance().createModel('user', {
+export default MysqlDatabase.getInstance().createModel('users', {
     idUser: {
         type: Sequelize.DataTypes.INTEGER,
         primaryKey: true,
@@ -26,7 +26,7 @@ export default MysqlDatabase.getInstance().createModel('user', {
         type: Sequelize.DataTypes.STRING,
         allowNull: false
     },
-    created_At: Sequelize.DataTypes.DATE,
-    update_At: Sequelize.DataTypes.DATE,
+    createdAt: Sequelize.DataTypes.DATE,
+    updatedAt: Sequelize.DataTypes.DATE,
     photo: Sequelize.DataTypes.STRING
 });
