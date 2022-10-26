@@ -1,0 +1,56 @@
+{
+  "name": "parrot-social-network",
+  "version": "1.0.0",
+  "description": "Projeto HandsOn 4 Gama Academy - Parrot Rede Social",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "tsc && node --unhandled-rejections=strict -r dotenv/config ./dist/infrastructure/apis/app/app.js",
+    "debug": "set DEBUG=* && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/thiagodrodrigues/Parrot-Social-NetWork.git"
+  },
+  "keywords": [
+    "typescript",
+    "express",
+    "api"
+  ],
+  "author": "Thiago Rodrigues, Thais Freire, Fernando Predes, Rafael Groetaers, Amauri Xavier, Victor Ramos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagodrodrigues/Parrot-Social-NetWork/issues"
+  },
+  "homepage": "https://github.com/thiagodrodrigues/Parrot-Social-NetWork#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.3",
+    "env": "^0.0.2",
+    "express": "^4.18.2",
+    "express-winston": "^4.2.0",
+    "mysql2": "^2.3.3",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^6.25.3",
+    "sequelize-typescript": "^2.1.5",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/cors": "^2.8.12",
+    "@types/debug": "^4.1.7",
+    "@types/express": "^4.17.14",
+    "@types/jest": "^29.2.0",
+    "@types/node": "^18.11.6",
+    "@types/validator": "^13.7.9",
+    "babel-jest": "^29.2.2",
+    "jest": "^29.2.2",
+    "source-map-support": "^0.5.21",
+    "ts-jest": "^29.0.3",
+    "tslint": "^6.1.3",
+    "typescript": "^4.8.4"
+  }
+}
