@@ -2,7 +2,7 @@ import * as Sequelize from 'sequelize';
 
 export default {
     up: (queryInterface: Sequelize.QueryInterface) => {
-        return queryInterface.createTable('post', {
+        return queryInterface.createTable('posts', {
             idPost: {
                 type: Sequelize.DataTypes.INTEGER,
                 primaryKey: true,
