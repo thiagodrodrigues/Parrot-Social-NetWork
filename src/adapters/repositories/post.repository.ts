@@ -13,19 +13,9 @@ export class PostRepository implements IPostRepository {
         private _modelPost: Sequelize.ModelCtor<Sequelize.Model<any, any>>
         ){}
 
-    async readById(resourceId: number): Promise<PostEntity | undefined> {
-        try{
-            const post = await this._database.read(this._modelPost, resourceId, {});
-            
-            return modelsToEntities(post);
-        } catch(err){
-            throw new Error((err as Error).message);
-        }
-    }
-
     async create(resource: PostEntity): Promise<PostEntity> {
-        const post = entitiesToModels(resource);
-        await this._database.create(this._modelPost, post);
+        const { posts } = entitiesToModels(resource);
+        await this._database.create(this._modelPost, posts);
         return resource;
     }
 
@@ -37,6 +27,16 @@ export class PostRepository implements IPostRepository {
         const post = await this._database.list(this._modelPost, {});
         const clients = post.map(modelsToEntities);
         return clients;
+    }
+
+    async readById(resourceId: number): Promise<PostEntity | undefined> {
+        try{
+            const post = await this._database.read(this._modelPost, resourceId, {});
+            
+            return modelsToEntities(post);
+        } catch(err){
+            throw new Error((err as Error).message);
+        }
     }
 
     async updateById(resource: PostEntity): Promise<PostEntity | undefined> {

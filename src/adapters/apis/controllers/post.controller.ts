@@ -5,6 +5,7 @@ import updatePostUsecase from '../../../domain/usecases/post/update.post.usecase
 import deletePostUsecase from '../../../domain/usecases/post/delete.post.usecase';
 import listPostUsecase from '../../../domain/usecases/post/list.post.usecase';
 import debug from 'debug';
+import jwt from 'jsonwebtoken';
 
 const log: debug.IDebugger = debug('app:posts-controller');
 
@@ -22,10 +23,26 @@ class PostController {
     }
 
     async createPost(req: express.Request, res: express.Response) {
-        const post = await createPostUsecase.execute(req.body);
+        const token = req.header(`Authorization`)?.replace(`Bearer `, ``);  
+        if(!token){
+            res.status(401).send({
+                error: `Usuario nao autenticado.`
+            });
+        } else {
+            const decoded = jwt.verify(token, String(process.env.SECRET_KEY));
+            if(typeof decoded == `string`){
+                res.status(401).send({
+                    error: `Usuario nao autenticado.`
+                });
+            } else {
+            const post = await createPostUsecase.execute({
+                content: req.body.content,
+                idUser: decoded.idUser
+            }); 
         log(post);
         res.status(201).send(post);
     }
+}}
 
     async updatePost(req: express.Request, res: express.Response) {
         const post = await updatePostUsecase.execute(req.body);

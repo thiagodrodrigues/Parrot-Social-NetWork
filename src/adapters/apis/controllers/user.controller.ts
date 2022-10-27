@@ -5,6 +5,7 @@ import updateUserUsecase from '../../../domain/usecases/user/update.user.usecase
 import deleteUserUsecase from '../../../domain/usecases/user/delete.user.usecase';
 import listUserUsecase from '../../../domain/usecases/user/list.user.usecase';
 import debug from 'debug';
+import loginAuthUsecase from '../../../domain/usecases/user/login.post.usecase';
 
 const log: debug.IDebugger = debug('app:users-controller');
 
@@ -37,6 +38,18 @@ class UserController {
             idUser: Number(req.params.idUser)
         });
         res.status(204).send();
+    }
+
+    async login(req: express.Request, res: express.Response){
+        const user = await loginAuthUsecase.execute(req.body);
+        if(user){
+            res.status(200).send(user);
+        } else {
+            res.status(401).send({
+                error: `Dados incorretos.`
+            });
+        }
+        
     }
 
 /*     async createClientBulk(req: express.Request, res: express.Response) {

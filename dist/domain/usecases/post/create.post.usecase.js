@@ -20,10 +20,13 @@ class CreatePostUseCase {
     }
     execute(data) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this._repository.create(data);
+            return yield this._repository.create({
+                idUser: Number(data.idUser),
+                content: data.content
+            });
         });
     }
 }
 exports.CreatePostUseCase = CreatePostUseCase;
 exports.default = new CreatePostUseCase(post_repository_1.default);
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY3JlYXRlLnBvc3QudXNlY2FzZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL3NyYy9kb21haW4vdXNlY2FzZXMvcG9zdC9jcmVhdGUucG9zdC51c2VjYXNlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7OztBQUVBLHFHQUE0RTtBQUc1RSxNQUFhLGlCQUFpQjtJQUMxQixZQUFvQixXQUE0QjtRQUE1QixnQkFBVyxHQUFYLFdBQVcsQ0FBaUI7SUFDaEQsQ0FBQztJQUNLLE9BQU8sQ0FBQyxJQUFnQjs7WUFDMUIsT0FBTyxNQUFNLElBQUksQ0FBQyxXQUFXLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxDQUFDO1FBQy9DLENBQUM7S0FBQTtDQUNKO0FBTkQsOENBTUM7QUFFRCxrQkFBZSxJQUFJLGlCQUFpQixDQUNoQyx5QkFBYyxDQUNqQixDQUFDIn0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY3JlYXRlLnBvc3QudXNlY2FzZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL3NyYy9kb21haW4vdXNlY2FzZXMvcG9zdC9jcmVhdGUucG9zdC51c2VjYXNlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7OztBQUVBLHFHQUE0RTtBQUc1RSxNQUFhLGlCQUFpQjtJQUMxQixZQUFvQixXQUE0QjtRQUE1QixnQkFBVyxHQUFYLFdBQVcsQ0FBaUI7SUFDaEQsQ0FBQztJQUNLLE9BQU8sQ0FBQyxJQUF3Qzs7WUFDbEQsT0FBTyxNQUFNLElBQUksQ0FBQyxXQUFXLENBQUMsTUFBTSxDQUFDO2dCQUNqQyxNQUFNLEVBQUUsTUFBTSxDQUFDLElBQUksQ0FBQyxNQUFNLENBQUM7Z0JBQzNCLE9BQU8sRUFBRSxJQUFJLENBQUMsT0FBTzthQUN4QixDQUFDLENBQUM7UUFDUCxDQUFDO0tBQUE7Q0FDSjtBQVRELDhDQVNDO0FBRUQsa0JBQWUsSUFBSSxpQkFBaUIsQ0FDaEMseUJBQWMsQ0FDakIsQ0FBQyJ9

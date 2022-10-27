@@ -10,8 +10,10 @@ export class PostRoutes extends CommonRoutesConfig {
 
     configureRoutes(): express.Application {
         this.app.route(`/feed/:idUser`)
-            .get(PostController.listPost) //listar todas as publicações no feed
             .post(PostController.createPost); //postar nova publicação
+
+        this.app.route(`/feed/`)
+        .get(PostController.listPost) //listar todas as publicações no feed
 
         this.app.route(`/feed/:idPost`)
             .get(PostController.getPostById) //pegar uma publicação específica

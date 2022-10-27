@@ -23,6 +23,19 @@ export class UserRepository implements IUserRepository {
         }
     }
 
+    async readByWhere(email: string, password: string): Promise<UserEntity | undefined> {
+        try{
+            const users = await this._database.readByWhere(this._modelUser, {
+                email: email,
+                password: password
+            });
+            
+            return modelsToEntities(users);
+        } catch(err){
+            throw new Error((err as Error).message);
+        }
+    }
+
     async create(resource: UserEntity): Promise<UserEntity> {
         const { users }  = entitiesToModels(resource);
         await this._database.create(this._modelUser, users);
