@@ -29,8 +29,16 @@ class UserController {
     }
 
     async updateUser(req: express.Request, res: express.Response) {
-        const user = await updateUserUsecase.execute(req.body);
-        res.status(200).send(user);
+        const userModel = await updateUserUsecase.execute({
+            name: req.body.name,
+	        email: req.body.email,
+	        password: req.body.password,
+	        apartment: req.body.apartment,
+	        photo: req.body.photo,
+            idUser: Number(req.params.idUser)
+        });
+        log(userModel);
+        res.status(200).send(userModel);
     }
 
     async removeUser(req: express.Request, res: express.Response) {

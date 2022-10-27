@@ -9,7 +9,7 @@ import debug from 'debug';
 import constantsConfig from '../../../infrastructure/config/constants.config';
 import jwt from 'jsonwebtoken';
 
-const log: debug.IDebugger = debug('app:clients-middleware');
+const log: debug.IDebugger = debug('app:auth-middleware');
 
 class AuthMiddleware {
     async checkAuth(req: express.Request, res: express.Response, next: express.NextFunction){
@@ -18,13 +18,13 @@ class AuthMiddleware {
 
             if(!token){
                 res.status(401).send({
-                    error: `Usuario nao autenticado.`
+                    error: constantsConfig.USER.MESSAGES.ERROR.USER_UNAUTHENTICATED_USER
                 });
             } else {
                 const decoded = jwt.verify(token, String(process.env.SECRET_KEY));
                 if(typeof decoded == `string`){
                     res.status(401).send({
-                        error: `Usuario nao autenticado.`
+                        error: constantsConfig.USER.MESSAGES.ERROR.USER_UNAUTHENTICATED_USER
                     });
                 } else {
                     console.log(decoded.idUser);
@@ -34,7 +34,7 @@ class AuthMiddleware {
 
         } catch (err) {
             res.status(401).send({
-                error: `Usuario nao autenticado.`
+                error: constantsConfig.USER.MESSAGES.ERROR.USER_UNAUTHENTICATED_USER
             });
         }
     }

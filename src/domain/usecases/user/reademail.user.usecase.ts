@@ -3,15 +3,17 @@ import { IUserRepository } from "../../repositories/user.repository.interface";
 import UserRepository from "../../../adapters/repositories/user.repository";
 import { IUseCase } from "../usecase.interface";
 
-class ReadUserUseCase implements IUseCase {
+class ReadEmailUseCase implements IUseCase {
+
     constructor(private _repository: IUserRepository) {
+
     }
-    async execute(data: { idUser: number }): Promise<UserEntity | undefined> {
-        console.log(data)
-        return await this._repository.readById(data.idUser);
+
+    async execute(data: { email: string }): Promise<UserEntity | undefined> {
+        return await this._repository.readByEmail(data.email);
     }
 }
 
-export default new ReadUserUseCase(
+export default new ReadEmailUseCase(
     UserRepository
 );

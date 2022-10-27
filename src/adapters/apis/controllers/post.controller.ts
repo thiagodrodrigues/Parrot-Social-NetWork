@@ -45,9 +45,27 @@ class PostController {
 }}
 
     async updatePost(req: express.Request, res: express.Response) {
-        const post = await updatePostUsecase.execute(req.body);
-        res.status(200).send(post);
-    }
+        const token = req.header(`Authorization`)?.replace(`Bearer `, ``);  
+        if(!token){
+            res.status(401).send({
+                error: `Usuario nao autenticado.`
+            });
+        } else {
+            const decoded = jwt.verify(token, String(process.env.SECRET_KEY));
+            if(typeof decoded == `string`){
+                res.status(401).send({
+                    error: `Usuario nao autenticado.`
+                });
+            } else {
+                const post = await updatePostUsecase.execute({
+                content: req.body.content,
+                idPost: Number(req.params.idPost),
+                idUser: decoded.idUser
+                });
+                
+            log(post);
+            res.status(200).send(post);
+    }}}
 
     async removePost(req: express.Request, res: express.Response) {
         const post = await deletePostUsecase.execute({

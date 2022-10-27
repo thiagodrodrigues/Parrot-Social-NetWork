@@ -23,6 +23,18 @@ export class UserRepository implements IUserRepository {
         }
     }
 
+    async readByEmail(email: string): Promise<UserEntity | undefined> {
+        try{
+            const user = await this._database.readString(this._modelUser, {
+                email: email
+            });
+            
+            return modelsToEntities(user);
+        } catch(err){
+            throw new Error((err as Error).message);
+        }
+    }
+
     async readByWhere(email: string, password: string): Promise<UserEntity | undefined> {
         try{
             const users = await this._database.readByWhere(this._modelUser, {
@@ -53,9 +65,12 @@ export class UserRepository implements IUserRepository {
     }
 
     async updateById(resource: UserEntity): Promise<UserEntity | undefined> {
-        let userModel = await this._database.read(this._modelUser, resource.idUser!, {});
-        const user = entitiesToModels(resource);
-        await this._database.update(userModel, user);
+        console.log(resource)
+        let userModel = await this._database.read(this._modelUser, resource.idUser);
+        console.log(`User Model: ${userModel}`);
+        const { users } = entitiesToModels(resource);
+        console.log(users);
+        await this._database.update(userModel, users);
         return resource;
     }
 }

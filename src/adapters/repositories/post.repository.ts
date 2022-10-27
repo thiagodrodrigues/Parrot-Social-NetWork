@@ -40,9 +40,9 @@ export class PostRepository implements IPostRepository {
     }
 
     async updateById(resource: PostEntity): Promise<PostEntity | undefined> {
-        let postModel = await this._database.read(this._modelPost, resource.idPost!, {});
-        const post = entitiesToModels(resource);
-        await this._database.update(postModel, post);
+        let postModel = await this._database.read(this._modelPost, resource.idPost!);
+        const { posts } = entitiesToModels(resource);
+        await this._database.update(postModel, posts);
         return resource;
     }
 }
