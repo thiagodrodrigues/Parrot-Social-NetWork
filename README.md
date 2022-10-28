@@ -84,7 +84,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
   <img src="https://img.favpng.com/6/2/11/redux-react-javascript-freecodecamp-npm-png-favpng-6F2x50visKuC0trBQ0952Cm1E_t.jpg" height="40" width="52" alt="redux logo"  />
   <img src="https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png" height="40" width="52" alt="html logo"  />
   <img src="https://logodownload.org/wp-content/uploads/2017/04/css-3-logo-1.png" height="40" width="52" alt="css logo"  />
-  <img src="https://img2.gratispng.com/20180512/stw/kisspng-bootstrap-responsive-web-design-web-development-lo-5af676c04b0535.2749534815261016963073.jpg" height="40" width="52" alt="bootstrap logo"  />
+  <img src="https://seeklogo.com/images/B/bootstrap-logo-3C30FB2A16-seeklogo.com.png" height="40" width="52" alt="bootstrap logo"  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" width="52" alt="mysql logo"  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="40" width="52" alt="express logo"  />
   <img src="https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png" height="40" width="52" alt="sequelize logo"  />
