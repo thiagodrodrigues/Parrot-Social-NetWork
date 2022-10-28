@@ -1,7 +1,7 @@
 <h1 align=center> Projeto Parrot HandsOn 4 - Grupo 10 </hi> <br>
 
 <p align="center">
-  <img src="./docs/parrot.JPG" width="50%">
+  <img src="./docs/parrot.jpeg" width="50%">
 </p>
 
 ---
@@ -69,7 +69,7 @@ Os desenvolvedores do back-end foram responsáveis por construir a API utilizand
 O Banco de Dados foi criado de acordo com o padrão de tabelas e colunas exposto a seguir: </br>
 
 <p align="center">
-<img src="./docs/bd.JPG" alt="Logo da Clínica">
+<img src="./docs/bd.jpeg" alt="Banco de Dados">
 
 ---
 ## 🛠 Tecnologias
@@ -79,11 +79,16 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" width="52" alt="typescript logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" width="52" alt="nodejs logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" width="52" alt="nodejs logo"  />
-  <img src="https://seeklogo.com/images/T/typeorm-logo-F243B34DEE-seeklogo.com.png" height="40" width="52" alt="TypeORM logo"  />
+  <img src="https://walde.co/wp-content/uploads/2016/09/nodejs_logo-300x300.png" height="40" width="52" alt="nodejs logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" width="52" alt="react logo"  />
+  <img src="https://img.favpng.com/6/2/11/redux-react-javascript-freecodecamp-npm-png-favpng-6F2x50visKuC0trBQ0952Cm1E_t.jpg" height="40" width="52" alt="redux logo"  />
+  <img src="https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png" height="40" width="52" alt="html logo"  />
+  <img src="https://logodownload.org/wp-content/uploads/2017/04/css-3-logo-1.png" height="40" width="52" alt="css logo"  />
+  <img src="https://img2.gratispng.com/20180512/stw/kisspng-bootstrap-responsive-web-design-web-development-lo-5af676c04b0535.2749534815261016963073.jpg" height="40" width="52" alt="bootstrap logo"  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" width="52" alt="mysql logo"  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="40" width="52" alt="express logo"  />
+  <img src="https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png" height="40" width="52" alt="sequelize logo"  />
+  <img src="https://www.payoda.com/wp-content/uploads/2021/05/1_mbP4Bjrs8Hshx7IgjsUNSg.jpeg" height="40" width="52" alt="API logo"  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" height="40" width="52" alt="npm logo"  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original-wordmark.svg" height="50" width="52" alt="yarn logo"  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" height="40" width="52" alt="jest logo"  />
