@@ -104,9 +104,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <table align=center>
   <tr>
 
-   <td align="center"> <img src="https://avatars.githubusercontent.com/u/76272470?v=4" width=175/></br><a href="https://www.linkedin.com/in/fernando-predes-b1545838/"> Fernando Predes - FronEnd</a></br><a href="https://github.com/fernandopredes"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" width="52" alt="github logo"  /></a>
+   <td align="center"> <img src="https://avatars.githubusercontent.com/u/76272470?v=4" width=175/></br><a href="https://www.linkedin.com/in/fernando-predes-b1545838/"> Fernando Predes - FronEnd</a></br><a href="https://github.com/fernandopredes"><img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Emblem.png" height="40" width="100" alt="github logo"  /></a>
    </td>
-   <td align="center"> <img src="https://avatars.githubusercontent.com/u/109247611?v=4"  width=175/></br><a href="https://www.linkedin.com/in/thiago-daniel-alvim-rodrigues-5229a8124/"> Thiago Rodrigues - BackEnd</a></br><a href="https://github.com/thiagodrodrigues"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" width="52" alt="github logo"  /></a>
+   <td align="center"> <img src="https://avatars.githubusercontent.com/u/109247611?v=4"  width=175/></br><a href="https://www.linkedin.com/in/thiago-daniel-alvim-rodrigues-5229a8124/"> Thiago Rodrigues - BackEnd</a></br><a href="https://github.com/thiagodrodrigues"><img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Emblem.png" height="40" width="100" alt="github logo"  /></a>
    </td>
    
   </tr>
