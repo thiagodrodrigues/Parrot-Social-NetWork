@@ -9,3 +9,6 @@
 {"level":"info","message":["Cliente encontrado: ",{"content":"3 postagem","createdAt":"2022-10-27T16:32:28.000Z","idPost":7,"idUser":4,"updatedAt":"2022-10-27T16:32:28.000Z"}],"timestamp":"2022-10-27T18:32:36.103Z"}
 {"level":"info","message":["Cliente encontrado: ",{"content":"3 postagem","createdAt":"2022-10-27T16:32:28.000Z","idPost":7,"idUser":4,"updatedAt":"2022-10-27T16:32:28.000Z"}],"timestamp":"2022-10-27T18:33:17.407Z"}
 {"level":"info","message":["Cliente encontrado: ",{"content":"3 postagem","createdAt":"2022-10-27T16:32:28.000Z","idPost":7,"idUser":4,"updatedAt":"2022-10-27T16:32:28.000Z"}],"timestamp":"2022-10-27T18:44:39.753Z"}
+{"level":"info","message":["Cliente encontrado: ",{"content":"Reunião de Condomínio hoje","createdAt":null,"idPost":1,"idUser":1,"updatedAt":null}],"timestamp":"2022-10-28T00:09:55.705Z"}
+{"level":"info","message":["Cliente encontrado: ",{"content":"Reunião cancelada","createdAt":null,"idPost":1,"idUser":1,"updatedAt":"2022-10-28T00:09:55.000Z"}],"timestamp":"2022-10-28T00:10:03.420Z"}
+{"level":"info","message":["Cliente encontrado: ",{"content":"Reunião cancelada","createdAt":null,"idPost":1,"idUser":1,"updatedAt":"2022-10-28T00:09:55.000Z"}],"timestamp":"2022-10-28T00:10:07.299Z"}

@@ -14,7 +14,7 @@ export default {
                 allowNull: false
             },
             email: {
-                type: Sequelize.DataTypes.INTEGER,
+                type: Sequelize.DataTypes.STRING,
                 allowNull: false,
                 unique: true
             },

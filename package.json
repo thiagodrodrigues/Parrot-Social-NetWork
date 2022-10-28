@@ -7,7 +7,7 @@
     "test": "jest",
     "start": "tsc && node --unhandled-rejections=strict -r dotenv/config ./dist/infrastructure/apis/app/app.js",
     "debug": "set DEBUG=* && npm run start",
-    "migrations": "tsc && npx sequelize db:create && npx sequelize db:migrate"
+    "migrations": "tsc && npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed:all"
   },
   "repository": {
     "type": "git",
